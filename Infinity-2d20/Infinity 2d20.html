@@ -552,7 +552,7 @@
     <table border="1" style="width:100%">
 		<tr>
 			<td><label>Awareness</label></td>
-			<input style=width:60px type="text" name="attr_Awareness" value = "0"/></td>
+			<td><input style=width:60px type="text" name="attr_Awareness" value = "0"/></td>
 			<td>Unskilled</td>
 			<td>
 				<button type='roll' name='roll_skill' value='@{character_name} rolls [[ ?{Dice|2}d20sacf19cf20<[[@{Awareness}]]]] Success(es) for Unskilled Awareness skill.'></button>
@@ -944,77 +944,65 @@
 		<fieldset class="repeating_Weapons">
 			<table border="1" style="width:100%">
 				<tr>                
-					<td>Name<input style=width:140px type="text" name="attr_weapon_Name_rep" />
-					<td>Range<input style=width:60px type="text" name="attr_weapon_Range_rep" />
-					<td>Attribute Bonus Dice<input style=width:30px  type="text" name="attr_weapon_Attribute_rep" value='0'/>
-					<td>Base Damage<input style=width:30px type="text" name="attr_weapon_Damagebonus_rep" value='0'>
-					<td>Damage<input style=width:30px type="text" name="attr_weapon_Damage_rep" value='0'><button type='roll' name="attr_Combat-Dice" value="/me rolls @{weapon_Name_rep} [[(?{Modifier to Damage Dice|0}+@{weapon_Damage_rep}+@{weapon_Attribute_rep})t[Combat-Dice]]]+@{weapon_Damagebonus_rep} Hits , Hover mouse over result to get full result"></button></td>
-					<td>Mode<input style=width:100px  type="text" name="attr_weapon_Mode_rep" />
-								</td>
-								</table>
-								 <table border="1" style="width:100%">
-								<tr>
-				
-					<td>Burst<input style=width:80px  type="text" name="attr_weapon_Burst_rep" />
-					<td>Size<input style=width:100px type="text" name="attr_weapon_Size_rep" />
-					<td>Qualities<input style=width:380px type="text" name="attr_weapon_Qualities_rep" />
-					<td>Reloads<input class="sheet-check-off" style=width:20px type="checkbox" name="attr_RL1"/>
-					<input class="sheet-check-off" style=width:15px type="checkbox" name="attr_RL2"/>
-					<input class="sheet-check-off" style=width:15px type="checkbox" name="attr_RL3"/>
-					<input class="sheet-check-off" style=width:15px type="checkbox" name="attr_RL4"/>
-					<input class="sheet-check-off" style=width:15px type="checkbox" name="attr_RL5"/>
+					<td>Name<input style=width:140px type="text" name="attr_weapon_Name_rep" /></td>
+					<td>Range<input style=width:60px type="text" name="attr_weapon_Range_rep" /></td>
+					<td>Attribute Bonus Dice<input style=width:30px  type="text" name="attr_weapon_Attribute_rep" value='0'/></td>
+					<td>Base Damage<input style=width:30px type="text" name="attr_weapon_Damagebonus_rep" value='0'></td>
+					<td>
+						Damage<input style=width:30px type="text" name="attr_weapon_Damage_rep" value='0'>
+						<button type='roll' name="attr_Combat-Dice" value="/me rolls @{weapon_Name_rep} [[(?{Modifier to Damage Dice|0}+@{weapon_Damage_rep} + @{weapon_Attribute_rep})t[Combat-Dice]]] + @{weapon_Damagebonus_rep} damage, Hover mouse over result to get full result"></button>
+					</td>
+					<td>Mode<input style=width:100px  type="text" name="attr_weapon_Mode_rep" /></td>
+				</tr>
+			</table>
+			<table border="1" style="width:100%">
+				<tr>
+					<td>Burst<input style=width:80px  type="text" name="attr_weapon_Burst_rep" /></td>
+					<td>Size<input style=width:100px type="text" name="attr_weapon_Size_rep" /></td>
+					<td>Qualities<input style=width:380px type="text" name="attr_weapon_Qualities_rep" /></td>
+					<td>
+						Reloads<input class="sheet-check-off" style=width:20px type="checkbox" name="attr_RL1"/>
+						<input class="sheet-check-off" style=width:15px type="checkbox" name="attr_RL2"/>
+						<input class="sheet-check-off" style=width:15px type="checkbox" name="attr_RL3"/>
+						<input class="sheet-check-off" style=width:15px type="checkbox" name="attr_RL4"/>
+						<input class="sheet-check-off" style=width:15px type="checkbox" name="attr_RL5"/>
 					</td>
 				</tr>
              </table>
 		</fieldset>
+    </div>
+	<div class="sheet-header">Gear</div>
+	<div class="sheet-repitem">
+		<fieldset class="repeating_Gear">
+			<table border="1" style="width:100%">
+				<tr>                
+					<td>Name<input style=width:102px type="text" name="attr_weapon_GearName1_rep" /></td>
+					<td>Effect<input style=width:306px type="text" name="attr_Gear_Effect1_rep" /></td>
+					<td>Name<input style=width:102px  type="text" name="attr_weapon_GearName2_rep" /></td>
+					<td>Effect<input style=width:306px type="text" name="attr_Gear_Effect2_rep"></td>
+				</tr>
+            </table>
+		</fieldset>
     </div> 
-    </table>
-<div class="sheet-header">Gear</div>
-
-                    
-                
-                <div class="sheet-repitem">
-             <fieldset class="repeating_Gear">
-                             <table border="1" style="width:100%">
-      
-<tr>                
-                <td>Name<input style=width:102px type="text" name="attr_weapon_GearName1_rep" />
-                <td>Effect<input style=width:306px type="text" name="attr_Gear_Effect1_rep" />
-                <td>Name<input style=width:102px  type="text" name="attr_weapon_GearName2_rep" />
-                <td>Effect<input style=width:306px type="text" name="attr_Gear_Effect2_rep">
-
-            </td>
-             </table>
- 
-
- </tr>
-       </fieldset>
-
-    </div> 
-    </table>
-
 </div> <!-- .section-stress -->
+
+
 <div class="sheet-break"></div>
-
-
-            <div class="sheet-header">Lifepath Characteristics</div>
-            <table border="1" style="width:100%">
-              <tr><td>           
-              <label>Age</label>
-        	
-            <input style=width:40px type="text" name="attr_Age" />
-    		
+<div class="sheet-header">Lifepath Characteristics</div>
+	<table border="1" style="width:100%">
+		<tr>
+			<td>
+				<label>Age</label>        	
+				<input style=width:40px type="text" name="attr_Age" />    		
 		    </td>
 			<td>
-             <label>Languages</label>
+				<label>Languages</label>
         		<input style=width:784px type="text" name="attr_Languages_Notes" />
             </td>
-            </tr>
-            
-            
-              </table>
-             <table border="1" style="width:100%">
-    		<tr>
+        </tr>
+    </table>
+	<table border="1" style="width:100%">
+    	<tr>
 			<td>
 				<label>Family Social Status</label>
 				<input style=width:204px type="text" name="attr_Family_Social_Status" />
@@ -1031,38 +1019,37 @@
 				<label>Education</label>
 				<input style=width:204px type="text" name="attr_EducationLP" />
     		</td>
-		    </tr>
-</table>
-              <table border="1" style="width:100%">
-        	<tr>
+		</tr>
+	</table>
+    <table border="1" style="width:100%">
+		<tr>
 			<td>
-             <label>Adolescent Event</label>
+				<label>Adolescent Event</label>
 				<input style=width:820px type="text" name="attr_Adolesent_Event" />
     		</td>
-            </tr>
-            </table>
-         <table border="1" style="width:100%">
-        	<tr>
+        </tr>
+    </table>
+	<table border="1" style="width:100%">
+        <tr>
 			<td>
-             <label>First Career</label>
-				<input style=width:204px type="text" name="attr_First_Career" />
+				<label>First Career</label>
+				<input type="text" name="attr_First_Career" />
      		</td>
 			<td>
-             <label>Second Career</label>
-    			<input style=width:204px type="text" name="attr_Second_Career" />
+				<label>Second Career</label>
+    			<input type="text" name="attr_Second_Career" />
       		</td>
 			<td>
-             <label>Third Career</label>
-    			<input style=width:204px type="text" name="attr_Third_Career" />
-      	</td>
+				<label>Third Career</label>
+    			<input type="text" name="attr_Third_Career" />
+			</td>
 			<td>
-             <label>Fourth Career</label>
-    			<input style=width:204px type="text" name="attr_Fourth_Career" />
+				<label>Fourth Career</label>
+    			<input type="text" name="attr_Fourth_Career" />
     		</td>
-            </table>
-            
-            
-		 <table border="1" style="width:100%">
+		</tr>
+	</table>
+	<table border="1" style="width:100%">
                    	</td>
 			<td>
              <label>Earnings</label>
