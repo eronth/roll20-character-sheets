@@ -6,9 +6,7 @@
 .sheet-header-fight {
     margin-bottom: 2px;
     padding: 1px 2px;
-
-    background: #00008B
-;
+    background: #FFFF00;
 	color: white;
 	font-weight: bold;
 }
@@ -16,9 +14,7 @@
 .sheet-header {
     margin-bottom: 4px;
     padding: 2px 4px;
-
-	background: #00008B
-;
+	background: #273c75;
 	color: white;
 	font-weight: bold;
 }
@@ -45,6 +41,12 @@ select {
 	margin: 0;
 }
 
+.characterviewer label {
+	font-weight: bold;
+	font-size: 1em;
+	margin-bottom: 10px;
+}
+
 textarea {
 	margin: 0;
 	width: 100%;
@@ -58,7 +60,7 @@ textarea {
 	margin-bottom: 2px;
 }
 
-/* Override Roll20 Button styling for something less conspicious */
+/* Override Roll20 Button styling for something less conspicuous */
 button {
 	height: 22px;
 	line-height: 16px;
@@ -82,7 +84,7 @@ button {
 
 }
 .charsheet {
-    background-image: url("https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Infinity-2d20/Infinitybackground.png");
+    background-image: url("https://raw.githubusercontent.com/eronth/roll20-character-sheets/master/Infinity-2d20/Infinitybackground.png");
 }
 
 .sheet-section-basic .sheet-column {
