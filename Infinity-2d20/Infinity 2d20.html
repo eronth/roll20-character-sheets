@@ -3,7 +3,9 @@
 
 <div class="sheet-break"></div>
 <div class="sheet-section-skills sheet-section sheet-half">
-	<div class="sheet-header">Character Sheet</div>
+
+	<!-- Simple Character info-->
+	<div class="sheet-header">Character Info</div>
     <table border="1" style="width:100%">
 		<tr>
 			<td>
@@ -14,11 +16,11 @@
 				<label>Melee</label>
 				<input style=width:40px type="text" name="attr_MDB" />
 			</td>
-                		<td>
+            <td>
 				<label>Psych</label>
 				<input style=width:40px type="text" name="attr_PDB" />
 			</td>
-                                	<td>
+            <td>
 				<label>Xp Total</label>
 				<input style=width:80px type="text" name="attr_XPT" />
 			</td>
@@ -32,11 +34,11 @@
 				<label>Ranged</label>
 				<input style=width:40px type="text" name="attr_RDB" />
 			</td>
-                		<td>
+            <td>
 				<label>Infowar</label>
 				<input style=width:40px type="text" name="attr_IWDB" />
     		</td>
-                                                <td>
+            <td>
 				<label>Xp Spent</label>
 				<input style=width:80px type="text" name="attr_XPS" />
 			</td>
@@ -58,36 +60,40 @@
     		</td>
 		</tr>
 	</table>
+	
+	<br>
+	<!-- Chashflow -->
     <div class="sheet-header">Cash Flow</div>
     <table border="1" style="width:100%">
         <tr>
     		<td>
-				<label>Earnings</label>
+				<b>Earnings</b>
 				<input style=width:100px type="text" name="attr_Earnings" />
 			</td>
 			<td>
-				<label>Current Cashflow</label>
+				<b>Current Cashflow</b>
 				<input style=width:130px type="text" name="attr_Current_Cashflow" />
 			</td>
        		<td>
-			<label> Cashflow</label>
+				<b>Max Cashflow</b>
 				<input style=width:130px  type="text" name="attr_Cashflow" value='(@{Earnings}+@{Lifestyle_Expertise}+5)' disabled/>
     		</td>
 		</tr>
 	</table>
 
+	<br>
 	<!-- Quick Trackers Section -->
     <div class="sheet-header">Trackers</div>
     <table border="1" style="width:100%">
 		<tr>
 			<td>
-				<label>Infinity Points</label>
+				<b>Infinity Points</b>
 			</td>
 			<td>
-				<label>Refresh</label>
+				<b>Refresh</b>
 			</td>
 			<td>
-				<label>Reaction Tracker</label>
+				<b>Reaction Tracker</b>
 			</td>      
         </tr>
         <tr>
@@ -172,39 +178,12 @@
 			<td>Skills<input  style=width:350px type="text" name="attr_Host_Skills" /></td>
 		</tr>
 	</table>
-
-    <div class="sheet-header">Geist Attributes </div>
-    <table border="1" style="width:100%">
-		<tr>
-			<td>AGI<input style=width:50px type="text" name="attr_Geist_AGI" /></td>
-			<td>AWA<input style=width:50px type="text" name="attr_Geist_AWA" /></td>
-			<td>BRW<input style=width:50px type="text" name="attr_Geist_BRW" /></td>
-			<td>COO<input style=width:50px type="text" name="attr_Geist_COO" /></td>
-			<td>INT<input style=width:50px type="text" name="attr_Geist_INT" /></td>
-			<td>PER<input style=width:50px type="text" name="attr_Geist_PER" /></td>
-			<td>WIL<input style=width:50px type="text" name="attr_Geist_WIL" /></td>
-		</tr>
-	</table>
-	<table border="1" style="width:100%">
-		<tr>
-			<td>Skills<input style=width:350px type="text" name="attr_Geist_Skills" /></td>
-		</tr>
-	</table>
-	  
-	<table border="1" style="width:100%">
-		<tr>
-			<td>Vigor<input style=width:51px type="text" name="attr_Geist_Vigor" /></td>
-			<td>Firewall<input style=width:51px type="text" name="attr_Geist_Firewall" /></td>
-			<td>Resolve<input style=width:51px type="text" name="attr_Geist_Resolve" /></td>
-			<td>Soak<input style=width:51px type="text" name="attr_Geist_Soak" /></td>
-		</tr>
-	</table>
 	
 	<br>
 
-	<div style="text-align:left">
+	<!--div style="text-align:left">
 		<span class="sheet-version-info">The stress tracking system will be redone soon. Please transfer the information in your stress tracks to the new trackers. The change will be finalized in two weeks.</span>
-	</div>
+	</div-->
 			
 	<!-- Vigour Section -->
 	<div class="sheet-header">Vigour (Physical)</div>
@@ -490,30 +469,19 @@
 <div class="sheet-section-consequences sheet-section sheet-half">
 	<div class="sheet-header">Attributes & Skills</div>
 	
+	
 	<!-- Agility -->
 	<table border="1" style="width:100%">
-		<!--tr>
-			<td colspan="2"><label>Agility</label></td>
-			<td colspan="2">
-				<input style=width:30px align="center" type="text" name="attr_Host_AGI2" value="@{Host_AGI}" disabled/>
-				+ 
-				<input style="width:30px" align="center" type="text" name="attr_Agility" value = "0"/>
-				=
-				<input style="width:45px;alignment:center;font-weight:bold" type="text" name="attr_total_AGI" value = "@{Host_AGI} + @{Agility}" disabled/>
-			</td>
-			<td>
-				<button type='roll' name='roll_skill' value='@{character_name} rolls [[ ?{Dice|2}d20sacf19cf20<[[@{Agility}]]]] Success(es) for Unskilled Agility skill.'></button>
-			</td>
-		</tr-->
 		<tr>
 			<td colspan="2"><label>Agility</label></td>
 			<td colspan="2">
-				<input style=width:30px align="center" type="text" name="attr_Host_AGI2" value="@{Host_AGI}" disabled/>
+				<input style="width:30px;text-align:center" type="text" name="attr_base_val" value="7" disabled/>
+				+
+				<input style="width:30px;text-align:center" type="text" name="attr_Host_AGI2" value="@{Host_AGI}" disabled/>
 				+ 
-				<input style="width:30px" align="center" type="text" name="attr_Personal_Agility" value = "0"/>
-				<input style="width:30px" align="center" type="text" name="attr_Agility" value = "0"/>
+				<input style="width:30px;text-align:center" align="center" type="text" name="attr_Personal_Agility" value = "0"/>
 				=
-				<input style="width:45px;alignment:center;font-weight:bold" type="text" name="attr_total_AGI" value = "@{Host_AGI} + @{Agility}" disabled/>
+				<input style="font-weight:bold;text-align:center;width:45px" align="center" type="text" name="attr_Agility" value = "@{base_val} + @{HOST_AGI} + @{Personal_Agility}" disabled/>
 			</td>
 			<td>
 				<button type='roll' name='roll_skill' value='@{character_name} rolls [[ ?{Dice|2}d20sacf19cf20<[[@{Agility}]]]] Success(es) for Unskilled Agility skill.'></button>
@@ -548,12 +516,20 @@
 		</tr>
     </table>
     
+	
 	<!--Awareness-->
     <table border="1" style="width:100%">
 		<tr>
-			<td><label>Awareness</label></td>
-			<td><input style=width:60px type="text" name="attr_Awareness" value = "0"/></td>
-			<td>Unskilled</td>
+			<td colspan="2"><label>Awareness</label></td>
+			<td colspan="2">
+				<input style="width:30px;text-align:center" type="text" name="attr_base_val" value="7" disabled/>
+				+
+				<input style="width:30px;text-align:center" type="text" name="attr_Host_AWA2" value="@{Host_AWA}" disabled/>
+				+ 
+				<input style="width:30px;text-align:center" align="center" type="text" name="attr_Personal_Awareness" value = "0"/>
+				=
+				<input style="font-weight:bold;text-align:center;width:45px" align="center" type="text" name="attr_Awareness" value = "@{base_val} + @{HOST_AWA} + @{Personal_Awareness}" disabled/>
+			</td>
 			<td>
 				<button type='roll' name='roll_skill' value='@{character_name} rolls [[ ?{Dice|2}d20sacf19cf20<[[@{Awareness}]]]] Success(es) for Unskilled Awareness skill.'></button>
 			</td>
@@ -605,12 +581,20 @@
 		</tr>
     </table>
 	
+	
 	<!-- Brawn -->
 	<table border="1" style="width:100%">
 		<tr>
-			<td><label>Brawn</label></td>
-			<td><input style=width:60px type="text" name="attr_Brawn" value = "0"/></td>
-			<td>Unskilled</td>
+			<td colspan="2"><label>Brawn</label></td>
+			<td colspan="2">
+				<input style="width:30px;text-align:center" type="text" name="attr_base_val" value="7" disabled/>
+				+
+				<input style="width:30px;text-align:center" type="text" name="attr_Host_BRW2" value="@{Host_BRW}" disabled/>
+				+ 
+				<input style="width:30px;text-align:center" align="center" type="text" name="attr_Personal_Brawn" value = "0"/>
+				=
+				<input style="font-weight:bold;text-align:center;width:45px" align="center" type="text" name="attr_Brawn" value = "@{base_val} + @{HOST_BRW} + @{Personal_Brawn}" disabled/>
+			</td>
 			<td>
 				<button type='roll' name='roll_skill' value='@{character_name} rolls [[ ?{Dice|2}d20sacf19cf20<[[@{Brawn}]]]] Success(es) for Unskilled Brawn skill.'></button>
 			</td>
@@ -635,12 +619,20 @@
 		</tr>
     </table>
     
+	
 	<!-- Coordination -->
     <table border="1" style="width:100%">
 		<tr>
-			<td><label>Coordination</label></td>
-			<td><input style=width:60px type="text" name="attr_Coordination" value = "0"/></td>
-			<td>Unskilled</td>
+			<td colspan="2"><label>Coordination</label></td>
+			<td colspan="2">
+				<input style="width:30px;text-align:center" type="text" name="attr_base_val" value="7" disabled/>
+				+
+				<input style="width:30px;text-align:center" type="text" name="attr_Host_COO2" value="@{Host_COO}" disabled/>
+				+ 
+				<input style="width:30px;text-align:center" align="center" type="text" name="attr_Personal_Coordination" value = "0"/>
+				=
+				<input style="font-weight:bold;text-align:center;width:45px" align="center" type="text" name="attr_Coordination" value = "@{base_val} + @{HOST_COO} + @{Personal_Coordination}" disabled/>
+			</td>
 			<td>
 				<button type='roll' name='roll_skill' value='@{character_name} rolls [[ ?{Dice|2}d20sacf19cf20<[[@{Coordination}]]]] Success(es) for Unskilled Coordination skill.'></button>
 			</td>
@@ -674,12 +666,20 @@
 		</tr>
     </table>
 	
+	
 	<!-- Intelligence -->
 	<table border="1" style="width:100%">
 		<tr>
-			<td><label>Intelligence</td>
-			<td><input style=width:60px type="text" name="attr_Intelligence" value = "0"/></td>
-			<td>Unskilled</td>
+			<td colspan="2"><label>Intelligence</td>
+			<td colspan="2">
+				<input style="width:30px;text-align:center" type="text" name="attr_base_val" value="7" disabled/>
+				+
+				<input style="width:30px;text-align:center" type="text" name="attr_Host_INT2" value="@{Host_INT}" disabled/>
+				+ 
+				<input style="width:30px;text-align:center" align="center" type="text" name="attr_Personal_Intelligence" value = "0"/>
+				=
+				<input style="font-weight:bold;text-align:center;width:45px" align="center" type="text" name="attr_Intelligence" value = "@{base_val} + @{HOST_INT} + @{Personal_Intelligence}" disabled/>
+			</td>
 			<td>
 				<button type='roll' name='roll_skill' value='@{character_name} rolls [[ ?{Dice|2}d20sacf19cf20<[[@{Intelligence}]]]] Success(es) for Unskilled Intelligence skill.'></button>
 			</td>
@@ -740,12 +740,21 @@
 		</tr>
     </table>
         
+		
 		<!-- Personality -->
     <table border="1" style="width:100%">
 		<tr>
-			<td><label>Personality</label></td>
-			<td><input style=width:60px type="text" name="attr_Personality" value = "0"/></td>
-			<td>Unskilled</td>
+			<td colspan="2"><label>Personality</label></td>
+			<td colspan="2">
+				<input style="width:30px;text-align:center" type="text" name="attr_base_val" value="7" disabled/>
+				+
+				<input style="width:30px;text-align:center" type="text" name="attr_Host_PER2" value="@{Host_PER}" disabled/>
+				+ 
+				<input style="width:30px;text-align:center" align="center" type="text" name="attr_Personal_Personality" value = "0"/>
+				=
+				<input style="font-weight:bold;text-align:center;width:45px" align="center" type="text" name="attr_Personality" value = "0"/>
+				<!--input style="width:45px;alignment:center;font-weight:bold" type="text" name="attr_total_AGI" value = "@{Host_AGI} + @{Agility}" disabled/-->
+			</td>
 			<td>
 				<button type='roll' name='roll_skill' value='@{character_name} rolls [[ ?{Dice|2}d20sacf19cf20<[[@{Personality}]]]] Success(es) for Unskilled Personality skill.'></button>
 			</td>
@@ -788,12 +797,20 @@
 		</tr>
     </table>
     
+	
     <!-- Willpower -->
     <table border="1" style="width:100%">
 		<tr>
-			<td><label>Willpower</label></td>
-			<td><input style=width:60px type="text" name="attr_Willpower" value = "0"/></td>
-			<td>Unskilled</td>
+			<td colspan="2"><label>Willpower</label></td>
+			<td colspan="2">
+				<input style="width:30px;text-align:center" type="text" name="attr_base_val" value="7" disabled/>
+				+
+				<input style="width:30px;text-align:center" type="text" name="attr_Host_WIL2" value="@{Host_WIL}" disabled/>
+				+ 
+				<input style="width:30px;text-align:center" align="center" type="text" name="attr_Personal_Willpower" value = "0"/>
+				=
+				<input style="font-weight:bold;text-align:center;width:45px" align="center" type="text" name="attr_Willpower" value = "@{base_val} + @{HOST_WIL} + @{Personal_Willpower}" disabled/>
+			</td>
 			<td>
 				<button type='roll' name='roll_skill' value='@{character_name} rolls [[ ?{Dice|2}d20sacf19cf20<[[@{Willpower}]]]] Success(es) for Unskilled Willpower skill.'></button>
 			</td>
@@ -809,6 +826,8 @@
 		</tr>
     </table>
 
+	
+	
 	<!-- Faction Handler -->
 	<div class="sheet-header">Faction Handler</div>
     <table border="1" style="width:100%">
@@ -831,29 +850,8 @@
     </table>
     <div class="sheet-header">Faction Handler Notes</div>
     <textarea style="width:100%" type="text" name="attr_FactionHandler_Name5"></textarea>
-    <div class="sheet-header">Traits</div>
-    <table border="1" style="width:100%">
-		<tr>
-			<td>1<input style=width:390px type="text" name="attr_Traits_Name1" /></td>
-		</tr>
-		<tr>
-			<td>2<input  style=width:390px type="text" name="attr_Traits_Name2" /></td>
-		</tr>
-		<tr>
-            <td>3<input  style=width:390px type="text" name="attr_Traits_Name3" /></td>
-		</tr>
-		<tr>
-			<td>4<input  style=width:390px type="text" name="attr_Traits_Name4" /></td>
-		</tr>
-		<tr>
-			<td>5<input  style=width:390px type="text" name="attr_Traits_Name5" /></td>
-		</tr>
-		<tr>
-			<td>6<input  style=width:390px type="text" name="attr_Traits_Name6" /></td>
-		</tr>
-	</table>
 </div>
-    <!--/div-->
+
 
     <div class="sheet-break"></div>
     <div class="sheet-header">Talents</div>
@@ -1050,24 +1048,73 @@
 		</tr>
 	</table>
 	<table border="1" style="width:100%">
-                   	</td>
+		<tr>
 			<td>
-             <label>Earnings</label>
+				<label>Earnings</label>
     			<input style=width:102px type="text" name="attr_Earnings" />
-      	</td>
+			</td>
 			<td>
-             <label>Assets</label>
+				<label>Assets</label>
     			<input style=width:102px type="text" name="attr_Assets" />
-                    </td>
+			</td>
 			<td>
-             <label>Additional Notes</label>
+				<label>Additional Notes</label>
         		<input style=width:612px type="text" name="attr_Additional_Notes" />
-
             </td>
-             </tr>
-             </table>
+        </tr>
+    </table>
+	
+	<!-- Arbitrary Traits -->
+	<div class="sheet-header">Traits</div>
+    <table border="1" style="width:100%">
+		<tr>
+			<td>1<input style=width:390px type="text" name="attr_Traits_Name1" /></td>
+		</tr>
+		<tr>
+			<td>2<input  style=width:390px type="text" name="attr_Traits_Name2" /></td>
+		</tr>
+		<tr>
+            <td>3<input  style=width:390px type="text" name="attr_Traits_Name3" /></td>
+		</tr>
+		<tr>
+			<td>4<input  style=width:390px type="text" name="attr_Traits_Name4" /></td>
+		</tr>
+		<tr>
+			<td>5<input  style=width:390px type="text" name="attr_Traits_Name5" /></td>
+		</tr>
+		<tr>
+			<td>6<input  style=width:390px type="text" name="attr_Traits_Name6" /></td>
+		</tr>
+	</table>
 
-
+	<!-- Geist Values -->
+	<div class="sheet-header">Geist Attributes </div>
+	<table border="1" style="width:100%">
+		<tr>
+			<td>AGI<input style=width:50px type="text" name="attr_Geist_AGI" /></td>
+			<td>AWA<input style=width:50px type="text" name="attr_Geist_AWA" /></td>
+			<td>BRW<input style=width:50px type="text" name="attr_Geist_BRW" /></td>
+			<td>COO<input style=width:50px type="text" name="attr_Geist_COO" /></td>
+			<td>INT<input style=width:50px type="text" name="attr_Geist_INT" /></td>
+			<td>PER<input style=width:50px type="text" name="attr_Geist_PER" /></td>
+			<td>WIL<input style=width:50px type="text" name="attr_Geist_WIL" /></td>
+		</tr>
+	</table>
+	<table border="1" style="width:100%">
+		<tr>
+			<td>Skills<input style=width:350px type="text" name="attr_Geist_Skills" /></td>
+		</tr>
+	</table>
+	  
+	<table border="1" style="width:100%">
+		<tr>
+			<td>Vigor<input style=width:51px type="text" name="attr_Geist_Vigor" /></td>
+			<td>Firewall<input style=width:51px type="text" name="attr_Geist_Firewall" /></td>
+			<td>Resolve<input style=width:51px type="text" name="attr_Geist_Resolve" /></td>
+			<td>Soak<input style=width:51px type="text" name="attr_Geist_Soak" /></td>
+		</tr>
+	</table>
+	
 	<div class="sheet-break"></div>
 	<div class="sheet-header">More Additional Notes</div>
     <textarea name="attr_More_add_Notes"></textarea>
