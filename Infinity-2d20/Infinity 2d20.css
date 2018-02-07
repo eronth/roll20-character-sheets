@@ -1,6 +1,61 @@
+/* === Tab stuff === */
+
+  /* Any class starting with sheet-category will be hidden... */
+.charsheet div[class^="sheet-category"] {   
+  display: none;
+}
+  
+  /* ... unless the sheet-tabN is checked, then the div.sheet-category-Y will be shown */  
+.charsheet input.sheet-tab1:checked ~ div.sheet-category-core,
+.charsheet input.sheet-tab2:checked ~ div.sheet-category-inventory,
+.charsheet input.sheet-tab3:checked ~ div.sheet-category-geist,
+.charsheet input.sheet-tab4:checked ~ div.sheet-category-lifepath,
+.charsheet input.sheet-tab5:checked ~ div.sheet-category-handler {
+	display: block;
+}
+
+/* radio button stuff */
+.charsheet input.sheet-tab {
+	width: 87px;
+	height: 20px;
+	cursor: pointer;  
+	position: relative;
+	opacity: 0;
+	z-index: 9999;
+}
+  
+.charsheet span.sheet-tab {
+	text-align: center;
+	display: inline-block;   
+	font-size: 13px;  
+	background: #4a6486; 
+	color: white;
+	font-weight: bold;
+	border-radius: 4px;
+
+	width: 87px;
+	height: 20px;
+	cursor: pointer;  
+	position: relative;
+	margin-left: -91px;
+}
+
+.charsheet input.sheet-tab1:checked + span.sheet-tab1,
+.charsheet input.sheet-tab2:checked + span.sheet-tab2,
+.charsheet input.sheet-tab3:checked + span.sheet-tab3,
+.charsheet input.sheet-tab4:checked + span.sheet-tab4,
+.charsheet input.sheet-tab5:checked + span.sheet-tab5 {
+	background: #ab8b57;  
+	color: white;
+	border-radius: 4px;
+}
+
+
+
+
 /* === GENERAL === */
 .charsheet {
-    min-width: 820px;
+	min-width: 820px;
 }
 
 .sheet-header-fight {
@@ -50,7 +105,7 @@ select {
 textarea {
 	margin: 0;
 	width: 100%;
-	height: 215px;
+	height: 125px;
 	resize: vertical;
 	box-sizing: border-box;
 }
