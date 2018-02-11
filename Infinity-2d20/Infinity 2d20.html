@@ -17,6 +17,7 @@
 	<div class="sheet-break"></div>
 	<!-- BEGINNING OF CORE TAB -->
 	<div class="sheet-category-core">
+		<!-- Core left -->
 		<div class="sheet-section-skills sheet-section sheet-half">
 			<!-- Simple Character info-->
 			<div class="sheet-header">Character Info</div>
@@ -109,11 +110,6 @@
 						<input style=width:25px class="sheet-check-off" type="checkbox" name="attr_rt5">
 					</td>
 				</tr>
-			<!--/table-->
-			
-			<!-- Momentum Tracker MERGE WITH TRACKERS-->
-			<!--div class="sheet-header">Momentum</div>
-			<table border="1" style="width:100%"-->
 				<tr>
 					<td colspan="3">
 						<b>Momentum</b>
@@ -175,19 +171,12 @@
 					<td>PER<input style=width:50px type="text" name="attr_Host_PER" /></td>
 					<td>WIL<input style=width:50px type="text" name="attr_Host_WIL" /></td>
 				</tr>
-			</table>
-			<table border="1" style="width:100%">
 				<tr>
-					<td>Skills<input  style=width:350px type="text" name="attr_Host_Skills" /></td>
+					<td colspan="7">Skills<input  style=width:350px type="text" name="attr_Host_Skills" /></td>
 				</tr>
 			</table>
 			
 			<br>
-
-			<!--div style="text-align:left">
-				<span class="sheet-version-info">The stress tracking system will be redone soon. Please transfer the information in your stress tracks to the new trackers. The change will be finalized in two weeks.</span>
-			</div-->
-					
 			<!-- Firewall section-->
 			<div class="sheet-header">Firewall (Technologic)</div>
 			<table border="1" style="width:100%" class="sheet-stress-tracker">
@@ -235,51 +224,8 @@
 					<td colspan="9"><input type="text" style="width:100%" name="attr_Firewall_Harm" /></td>
 				</tr>
 			</table>
-			<div>
-				<span>Click here to show the old stress tracker: </span>
-				<input type="checkbox" class="sheet-old-stress" />
-				<div class="sheet-old-stress">
-					<table border="1" style="width:100%">
-						<tr>
-							<td><input class="sheet-check-off" style=width:15px type="checkbox" name="attr_FW1" /></td>
-							<td><input class="sheet-check-off" style=width:15px type="checkbox" name="attr_FW2" /></td>
-							<td><input class="sheet-check-off" style=width:15px type="checkbox" name="attr_FW3" /></td>
-							<td><input class="sheet-check-off" style=width:15px type="checkbox" name="attr_FW4" /></td>
-							<td><input class="sheet-check-off" style=width:15px type="checkbox" name="attr_FW5" /></td>
-							<td><input class="sheet-check-off" style=width:15px type="checkbox" name="attr_FW6" /></td>
-							<td><input class="sheet-check-off" style=width:15px type="checkbox" name="attr_FW7" /></td>
-							<td><input class="sheet-check-off" style=width:15px type="checkbox" name="attr_FW8" /></td>
-							<td><input class="sheet-check-off" style=width:15px type="checkbox" name="attr_FW9" /></td>
-							<td><input class="sheet-check-off" style=width:15px type="checkbox" name="attr_FW10" /></td>
-							<td><input class="sheet-check-off" style=width:15px type="checkbox" name="attr_FW11" /></td>
-							<td><input class="sheet-check-off" style=width:15px type="checkbox" name="attr_FW12" /></td>
-							<td><input class="sheet-check-off" style=width:15px type="checkbox" name="attr_FW13" /></td>
-							<td><input class="sheet-check-off" style=width:15px type="checkbox" name="attr_FW14" /></td>
-							<td><input class="sheet-check-off" style=width:15px type="checkbox" name="attr_FW15" /></td>
-							<td><input class="sheet-check-off" style=width:15px type="checkbox" name="attr_FW16" /></td>
-						</tr>
-						<tr>
-							<td><input class="sheet-check-off" style=width:15px type="checkbox" name="attr_FW17" /></td>
-							<td><input class="sheet-check-off" style=width:15px type="checkbox" name="attr_FW18" /></td>
-							<td><input class="sheet-check-off" style=width:15px type="checkbox" name="attr_FW19" /></td>
-							<td><input class="sheet-check-off" style=width:15px type="checkbox" name="attr_FW20" /></td>
-							<td><input class="sheet-check-off" style=width:15px type="checkbox" name="attr_FW21" /></td>
-							<td><input class="sheet-check-off" style=width:15px type="checkbox" name="attr_FW22" /></td>
-							<td><input class="sheet-check-off" style=width:15px type="checkbox" name="attr_FW23" /></td>
-							<td><input class="sheet-check-off" style=width:15px type="checkbox" name="attr_FW24" /></td>
-							<td><input class="sheet-check-off" style=width:15px type="checkbox" name="attr_FW25" /></td>
-							<td><input class="sheet-check-off" style=width:15px type="checkbox" name="attr_FW26" /></td>
-							<td><input class="sheet-check-off" style=width:15px type="checkbox" name="attr_FW27" /></td>
-							<td><input class="sheet-check-off" style=width:15px type="checkbox" name="attr_FW28" /></td>
-							<td><input class="sheet-check-off" style=width:15px type="checkbox" name="attr_FW29" /></td>
-							<td><input class="sheet-check-off" style=width:15px type="checkbox" name="attr_FW30" /></td>
-							<td><input class="sheet-check-off" style=width:15px type="checkbox" name="attr_FW31" /></td>
-							<td><input class="sheet-check-off" style=width:15px type="checkbox" name="attr_FW32" /></td>
-						</tr>
-					</table>
-				</div>
-			</div>
-					
+
+			<br>
 			<!-- Resolve Section -->
 			<div class="sheet-header">Resolve (Mental)</div>
 			<table border="1" style="width:100%" class="sheet-stress-tracker">
@@ -324,50 +270,8 @@
 					<td colspan="9"><input type="text" style="width:100%" name="attr_Resolve_Harm" /></td>
 				</tr>
 			</table>
-			<div>
-				<span>Click here to show the old stress tracker: </span><input type="checkbox" class="sheet-old-stress" />
-				<div class="sheet-old-stress">
-					<table border="1" style="width:100%">
-						<tr>
-							<td><input class="sheet-check-off" style=width:15px type="checkbox" name="attr_RS1" /></td>
-							<td><input class="sheet-check-off" style=width:15px type="checkbox" name="attr_RS2" /></td>
-							<td><input class="sheet-check-off" style=width:15px type="checkbox" name="attr_RS3" /></td>
-							<td><input class="sheet-check-off" style=width:15px type="checkbox" name="attr_RS4" /></td>
-							<td><input class="sheet-check-off" style=width:15px type="checkbox" name="attr_RS5" /></td>
-							<td><input class="sheet-check-off" style=width:15px type="checkbox" name="attr_RS6" /></td>
-							<td><input class="sheet-check-off" style=width:15px type="checkbox" name="attr_RS7" /></td>
-							<td><input class="sheet-check-off" style=width:15px type="checkbox" name="attr_RS8" /></td>
-							<td><input class="sheet-check-off" style=width:15px type="checkbox" name="attr_RS9" /></td>
-							<td><input class="sheet-check-off" style=width:15px type="checkbox" name="attr_RS10" /></td>
-							<td><input class="sheet-check-off" style=width:15px type="checkbox" name="attr_RS11" /></td>
-							<td><input class="sheet-check-off" style=width:15px type="checkbox" name="attr_RS12" /></td>
-							<td><input class="sheet-check-off" style=width:15px type="checkbox" name="attr_RS13" /></td>
-							<td><input class="sheet-check-off" style=width:15px type="checkbox" name="attr_RS14" /></td>
-							<td><input class="sheet-check-off" style=width:15px type="checkbox" name="attr_RS15" /></td>
-							<td><input class="sheet-check-off" style=width:15px type="checkbox" name="attr_RS16" /></td>
-						</tr>
-						<tr>
-							<td><input class="sheet-check-off" style=width:15px type="checkbox" name="attr_RS17" /></td>
-							<td><input class="sheet-check-off" style=width:15px type="checkbox" name="attr_RS18" /></td>
-							<td><input class="sheet-check-off" style=width:15px type="checkbox" name="attr_RS19" /></td>
-							<td><input class="sheet-check-off" style=width:15px type="checkbox" name="attr_RS20" /></td>
-							<td><input class="sheet-check-off" style=width:15px type="checkbox" name="attr_RS21" /></td>
-							<td><input class="sheet-check-off" style=width:15px type="checkbox" name="attr_RS22" /></td>
-							<td><input class="sheet-check-off" style=width:15px type="checkbox" name="attr_RS23" /></td>
-							<td><input class="sheet-check-off" style=width:15px type="checkbox" name="attr_RS24" /></td>
-							<td><input class="sheet-check-off" style=width:15px type="checkbox" name="attr_RS25" /></td>
-							<td><input class="sheet-check-off" style=width:15px type="checkbox" name="attr_RS26" /></td>
-							<td><input class="sheet-check-off" style=width:15px type="checkbox" name="attr_RS27" /></td>
-							<td><input class="sheet-check-off" style=width:15px type="checkbox" name="attr_RS28" /></td>
-							<td><input class="sheet-check-off" style=width:15px type="checkbox" name="attr_RS29" /></td>
-							<td><input class="sheet-check-off" style=width:15px type="checkbox" name="attr_RS30" /></td>
-							<td><input class="sheet-check-off" style=width:15px type="checkbox" name="attr_RS31" /></td>
-							<td><input class="sheet-check-off" style=width:15px type="checkbox" name="attr_RS32" /></td>
-						</tr>
-					</table>
-				</div>
-			</div>
 			
+			<br>
 			<!-- Vigour Section -->
 			<div class="sheet-header">Vigour (Physical)</div>
 			<table border="1" style="width:100%" class="sheet-stress-tracker">
@@ -412,53 +316,9 @@
 					<td colspan="9"><input type="text" style="width:100%" name="attr_Vigour_Harm" /></td>
 				</tr>
 			</table>
-			<div>
-				<span>Click here to show the old stress tracker: </span>
-				<input type="checkbox" class="sheet-old-stress" />
-				<div class="sheet-old-stress">
-					<table border="1" style="width:100%">
-						<tr>
-							<td><input class="sheet-check-off" style=width:15px type="checkbox" name="attr_PH1" /></td>
-							<td><input class="sheet-check-off" style=width:15px type="checkbox" name="attr_PH2" /></td>
-							<td><input class="sheet-check-off" style=width:15px type="checkbox" name="attr_PH3" /></td>
-							<td><input class="sheet-check-off" style=width:15px type="checkbox" name="attr_PH4" /></td>
-							<td><input class="sheet-check-off" style=width:15px type="checkbox" name="attr_PH5" /></td>
-							<td><input class="sheet-check-off" style=width:15px type="checkbox" name="attr_PH6" /></td>
-							<td><input class="sheet-check-off" style=width:15px type="checkbox" name="attr_PH7" /></td>
-							<td><input class="sheet-check-off" style=width:15px type="checkbox" name="attr_PH8" /></td>
-							<td><input class="sheet-check-off" style=width:15px type="checkbox" name="attr_PH9" /></td>
-							<td><input class="sheet-check-off" style=width:15px type="checkbox" name="attr_PH10" /></td>
-							<td><input class="sheet-check-off" style=width:15px type="checkbox" name="attr_PH11" /></td>
-							<td><input class="sheet-check-off" style=width:15px type="checkbox" name="attr_PH12" /></td>
-							<td><input class="sheet-check-off" style=width:15px type="checkbox" name="attr_PH13" /></td>
-							<td><input class="sheet-check-off" style=width:15px type="checkbox" name="attr_PH14" /></td>
-							<td><input class="sheet-check-off" style=width:15px type="checkbox" name="attr_PH15" /></td>
-							<td><input class="sheet-check-off" style=width:15px type="checkbox" name="attr_PH16" /></td>
-						</tr>
-						<tr>
-							<td><input class="sheet-check-off" style=width:15px type="checkbox" name="attr_PH17" /></td>
-							<td><input class="sheet-check-off" style=width:15px type="checkbox" name="attr_PH18" /></td>
-							<td><input class="sheet-check-off" style=width:15px type="checkbox" name="attr_PH19" /></td>
-							<td><input class="sheet-check-off" style=width:15px type="checkbox" name="attr_PH20" /></td>
-							<td><input class="sheet-check-off" style=width:15px type="checkbox" name="attr_PH21" /></td>
-							<td><input class="sheet-check-off" style=width:15px type="checkbox" name="attr_PH22" /></td>
-							<td><input class="sheet-check-off" style=width:15px type="checkbox" name="attr_PH23" /></td>
-							<td><input class="sheet-check-off" style=width:15px type="checkbox" name="attr_PH24" /></td>
-							<td><input class="sheet-check-off" style=width:15px type="checkbox" name="attr_PH25" /></td>
-							<td><input class="sheet-check-off" style=width:15px type="checkbox" name="attr_PH26" /></td>
-							<td><input class="sheet-check-off" style=width:15px type="checkbox" name="attr_PH27" /></td>
-							<td><input class="sheet-check-off" style=width:15px type="checkbox" name="attr_PH28" /></td>
-							<td><input class="sheet-check-off" style=width:15px type="checkbox" name="attr_PH29" /></td>
-							<td><input class="sheet-check-off" style=width:15px type="checkbox" name="attr_PH30" /></td>
-							<td><input class="sheet-check-off" style=width:15px type="checkbox" name="attr_PH31" /></td>
-							<td><input class="sheet-check-off" style=width:15px type="checkbox" name="attr_PH32" /></td>
-						</tr>
-					</table>
-				</div>
-			</div>
 		</div>
 
-
+		<!-- Core right -->
 		<div class="sheet-section-consequences sheet-section sheet-half">
 			<div class="sheet-header">Attributes & Skills</div>
 			
@@ -745,7 +605,7 @@
 						+ 
 						<input style="width:30px;text-align:center" align="center" type="text" name="attr_Personal_Personality" value = "0"/>
 						=
-						<input style="font-weight:bold;text-align:center;width:45px" align="center" type="text" name="attr_Personality" value = "0"/>
+						<input style="font-weight:bold;text-align:center;width:45px" align="center" type="text" name="attr_Personality" value = "@{base_val} + @{HOST_PER} + @{Personal_Personality}" disabled/>
 						<!--input style="width:45px;alignment:center;font-weight:bold" type="text" name="attr_total_AGI" value = "@{Host_AGI} + @{Agility}" disabled/-->
 					</td>
 					<td style="text-align:center">
@@ -913,30 +773,69 @@
 		<div class="sheet-section-skills sheet-section sheet-half">
 			<br>
 			<!-- Cashflow -->
-			<div class="sheet-header">Cash Flow</div>
-			<table border="1" style="width:100%">
+			<div class="sheet-header">Cashflow (Financial)</div>
+			<table border="1" style="width:100%" class="sheet-stress-tracker">
 				<tr>
-					<td>
-						<b>Earnings</b>
-						<input style=width:100px type="text" name="attr_Earnings" />
-					</td>
-					<td>
-						<b>Current Cashflow</b>
-						<input style=width:130px type="text" name="attr_Current_Cashflow" />
-					</td>
-					<td>
-						<b>Max Cashflow</b>
-						<input style=width:130px  type="text" name="attr_Cashflow" value='(@{Earnings}+@{Lifestyle_Expertise}+5)' disabled/>
-					</td>
+					<td><label><input type="radio" name="attr_CF" value="0" checked="checked" /><span>0</span></label></td>
+					<td><label><input type="radio" name="attr_CF" value="1" /><span>1</span></label></td>
+					<td><label><input type="radio" name="attr_CF" value="2" /><span>2</span></label></td>
+					<td><label><input type="radio" name="attr_CF" value="3" /><span>3</span></label></td>
+					<td><label><input type="radio" name="attr_CF" value="4" /><span>4</span></label></td>
+					<td><label><input type="radio" name="attr_CF" value="5" /><span>5</span></label></td>
+					<td><label><input type="radio" name="attr_CF" value="6" /><span>6</span></label></td>
+					<td><label><input type="radio" name="attr_CF" value="7" /><span>7</span></label></td>
+					<td><label><input type="radio" name="attr_CF" value="8" /><span>8</span></label></td>
+					<td><label><input type="radio" name="attr_CF" value="9" /><span>9</span></label></td>
+					<td><label><input type="radio" name="attr_CF" value="10" /><span>10</span></label></td>
+				</tr>
+				<tr>
+					<td><label><input type="radio" name="attr_CF" value="11" /><span>11</span></label></td>
+					<td><label><input type="radio" name="attr_CF" value="12" /><span>12</span></label></td>
+					<td><label><input type="radio" name="attr_CF" value="13" /><span>13</span></label></td>
+					<td><label><input type="radio" name="attr_CF" value="14" /><span>14</span></label></td>
+					<td><label><input type="radio" name="attr_CF" value="15" /><span>15</span></label></td>
+					<td><label><input type="radio" name="attr_CF" value="16" /><span>16</span></label></td>
+					<td><label><input type="radio" name="attr_CF" value="17" /><span>17</span></label></td>
+					<td><label><input type="radio" name="attr_CF" value="18" /><span>18</span></label></td>
+					<td><label><input type="radio" name="attr_CF" value="19" /><span>19</span></label></td>
+					<td><label><input type="radio" name="attr_CF" value="20" /><span>20</span></label></td>
+					<td><label><input type="radio" name="attr_CF" value="21" /><span>21</span></label></td>
+				</tr>
+				<tr class="sheet-stress-tracker-harms">
+					<td colspan="2">Shortfalls:</td>
+					<td><input type="checkbox" name="attr_CF11w" /></td>
+					<td><input type="checkbox" name="attr_CF12w" /></td>
+					<td><input type="checkbox" name="attr_CF13w" /></td>
+					<td><input type="checkbox" name="attr_CF14w" /></td>
+					<!--td><input type="checkbox" name="attr_PH15w" /></td-->
+					<td colspan="4">Max Cashflow:</td>
+					<td colspan="1"><input type="text" name="attr_MaxCashflow" style="width:100%" value='(@{Earnings}+@{Lifestyle_Expertise}+5)' disabled/><input type="number" style="display:none" name="attr_Cashflow_max" value='(@{Earnings}+@{Lifestyle_Expertise}+5)' disabled/></td>
+				</tr>
+				<tr>
+					<td colspan="3">Earnings</td>
+					<td colspan="2"><input style="width:100%" type="text" name="attr_Earnings" /></td>
+					<td colspan="3">Assets</td>
+					<td colspan="3"><input style="width:100%" type="text" name="attr_Assets" /></td>
+				</tr>
+				<tr>
+					<td colspan="3" rowspan="2">Harm Effects:</td>
+					<td colspan="9"><input type="text" style="width:100%" name="attr_Cashflow_Harm" value="Acquisition and Asset Management D(+1) per." disabled/></td>
+				</tr>
+				<tr>
+					<td colspan="9"><input type="text" style="width:100%" name="attr_Cashflow_Harm2" value="Cannot make Acquisition tests with 4+ shortfalls." disabled/></td>
 				</tr>
 			</table>
+			
+			
+			
+
 			
 			<br>
 			<!-- Buying in Bulk -->
 			<div class="sheet-header">Buying In Bulk</div>
 			<table border="1" style="width:100%">
 				<tr>
-					<th>Number of Items</td>
+					<th>Number of Items</th>
 					<th>Difficulty Increase</th>
 				</tr>
 				<tr>
@@ -1036,17 +935,6 @@
 							<input class="sheet-check-off" style=width:15px type="checkbox" name="attr_wep_O12_Restriction"/>
 						</td>
 					</tr>
-					<tr>
-						<td colspan="8">
-							Reloads<input class="sheet-check-off" style=width:15px type="checkbox" name="attr_RL1"/>
-							<input class="sheet-check-off" style=width:15px type="checkbox" name="attr_RL2"/>
-							<input class="sheet-check-off" style=width:15px type="checkbox" name="attr_RL3"/>
-							<input class="sheet-check-off" style=width:15px type="checkbox" name="attr_RL4"/>
-							<input class="sheet-check-off" style=width:15px type="checkbox" name="attr_RL5"/>
-							<br>
-							This section gonna go away.
-						</tr>
-					</tr>
 				 </table>
 			</fieldset>
 		</div>
@@ -1057,9 +945,6 @@
 		<div class="sheet-repitem">
 			<fieldset class="repeating_Ammo">
 				<table border="3" style="width:100%">
-					<!--tr>
-						<th colspan="6"><div class="sheet-header">Ammo</div></th>
-					</tr-->
 					<tr>
 						<th style="border-right:0;">Name</th>
 						<td style="border-left:0;">
@@ -1097,16 +982,124 @@
 		</div>
 		
 		<br>
+		<!-- Hacking Section (Repeating) -->
+		<div class="sheet-header">Hacking Tools</div>
+		<table border="3" style="width:100%">
+			<tr>
+				<th style="border-right:0">Name</th>
+				<td style="border-left:0;"><input style="width:100%" type="text" name="attr_hacking_tool_Name" /></td>
+				<th style="border-right:0">Ratings</th>
+				<td style="border-left:0;">CLAW-<input style=width:25px type="text" name="attr_hacking_tool_CLAW_rate" /></td>
+				<td style="border-left:0;">SWORD-<input style=width:25px type="text" name="attr_hacking_tool_SWORD_rate" /></td>
+				<td style="border-left:0;">SHIELD-<input style=width:25px type="text" name="attr_hacking_tool_SHIELD_rate" /></td>
+				<td style="border-left:0;">GADGET-<input style=width:25px type="text" name="attr_hacking_tool_GADGET_rate" /></td>
+				<td style="border-left:0;">IC-<input style=width:25px type="text" name="attr_hacking_tool_IC_rate" /></td>
+			</tr>
+			<tr>
+				<th style="border-right:0">Upgrades</th>
+				<td style="border-left:0;"><input style="width:100" type="text" name="attr_hacking_tool_Upgrades" /></td>
+				<th style="border-right:0">Notes</th>
+				<td colspan="5" style="border-left:0;"><input style=width:80px type="text" name="attr_hacking_tool_Notes_n" /></td>
+			</tr>
+			<tr>
+				<td colspan="8">
+					<!--div class="sheet-repitem"-->
+						<!--fieldset class="repeating_Programs"-->
+							<table border="0" style="width:100%">
+								<tr>
+									<th style="border-right:0;">Program</th>
+									<td style="border-left:0;"><input style=width:80px type="text" name="attr_program_Name_rep" /></td>
+									<th style="border-right:0;">Type</th>
+									<td style="border-left:0;">
+										<input style=width:80px type="text" name="attr_program_Type" />-<input style=width:80px type="text" name="attr_program_Rating" />
+									</td>
+									<th style="border-right:0;">Damage</th>
+									<td style="border-left:0;border-right:0;text-align:right">
+										<input style=width:30px type="text" name="attr_weapon_Damagebonus_rep" value='0'>
+										 + 
+										<input style=width:30px type="text" name="attr_weapon_Damage_rep" value='0'>
+									</td>
+									<td style="border-left:0">
+										<img src="https://raw.githubusercontent.com/eronth/roll20-character-sheets/master/Infinity-2d20/Nfinity.png" alt="Combat Dice" width="20" height="20" style="display:block;margin-top:auto;margin-bottom:auto">
+									</td>
+									<th style="border-right:0">Qualities</th>
+									<td style="border-left:0" colspan="5">
+										<input style="width:100%" type="text" name="attr_program_Qualities_rep" />
+									</td>
+								</tr>
+								<tr>
+									<th style="border-right:0">Notes</th>
+									<td style="border-left:0" colspan="5">
+										<input style="width:100%" type="text" name="attr_program_Notes_rep" />
+									</td>
+								</tr>
+							</table>
+						<!--/fieldset-->
+					<!--/div-->
+				</td>
+			</tr>
+		</table>
+		
+		<br>
+		<!-- Armor Section (Repeating) -->
+		<div class="sheet-header">Armor</div>
+		<div class="sheet-repitem">
+			<fieldset class="repeating_Armor">
+				<table border="3" style="width:100%">
+					<tr>
+						<th rowspan="2" style="border-bottom:0">Name</th>
+						<th rowspan="2" style="border-bottom:0">Type</th>
+						<th colspan="4" style="border-bottom:0">Armor Soak</th>
+						<th rowspan="2" style="border-bottom:0">BTS</th>
+						<th rowspan="2" style="border-bottom:0">Maintenance</th>
+						<th rowspan="2" style="border-bottom:0">Equipped?</th>
+					</tr>
+					<tr>
+						<th style="border:0">Head</th>
+						<th style="border:0">Torso</th>
+						<th style="border:0">Arm</th>
+						<th style="border:0">Leg</th>
+					</tr>
+					<tr>
+						<td style="text-align:center;border-top:0"><input style="width:140px" type="text" name="attr_armor_name_n" /></td>
+						<td style="text-align:center;border-top:0"><input style="width:150px" type="text" name="attr_armor_Type_n" /></td>
+						<td style="text-align:center;border-top:0"><input style="width:30px;text-align:center" type="text" name="attr_armor_head" /></td>
+						<td style="text-align:center;border-top:0"><input style="width:30px;text-align:center" type="text" name="attr_armor_torso" /></td>
+						<td style="text-align:center;border-top:0"><input style="width:30px;text-align:center" type="text" name="attr_armor_arm" /></td>
+						<td style="text-align:center;border-top:0"><input style="width:30px;text-align:center" type="text" name="attr_armor_leg" /></td>
+						<td style="text-align:center;border-top:0"><input style="width:30px;text-align:center" type="text" name="attr_armor_bts_armor" /></td>
+						<td style="text-align:center;border-top:0"><input style="width:30px;text-align:center" type="text" name="attr_armor_maintenance c" /></td>
+						<td style="border-left:0;text-align:center;border-top:0">
+							<input class="sheet-check-off" style=width:15px type="checkbox" name="attr_Armor_currently_equipped"/>
+						</td>
+					</tr>
+					<tr>
+						<th style="border-right:0">Qualities</th>
+						<td style="border-left:0" colspan="8">
+							<input style="width:100%" type="text" name="attr_ammo_Qualities_rep" />
+						</td>
+					</tr>
+				</table>
+			</fieldset>
+		</div>
+		
+		<br>
 		<!-- Gear Section -->
 		<div class="sheet-header">Gear</div>
 		<div class="sheet-repitem">
 			<fieldset class="repeating_Gear">
-				<table border="1" style="width:100%">
+				<table border="3" style="width:100%">
 					<tr>                
-						<td>Name<input style=width:102px type="text" name="attr_weapon_GearName1_rep" /></td>
-						<td>Effect<input style=width:306px type="text" name="attr_Gear_Effect1_rep" /></td>
-						<td>Name<input style=width:102px  type="text" name="attr_weapon_GearName2_rep" /></td>
-						<td>Effect<input style=width:306px type="text" name="attr_Gear_Effect2_rep"></td>
+						<th style="border-bottom:0">Name</th>
+						<th style="border-bottom:0">Quantity</th>
+						<th style="border-bottom:0">Carried</th>
+						<th style="border-bottom:0">Effects and Details</th>
+					</tr>
+					<tr>                
+						<td style="border-top:0"><input style="width:250px" type="text" name="attr_Gear_Name" /></td>
+						<td style="text-align:center;border-top:0"><input style="width:30px;text-align:center" type="text" name="attr_Gear_Quantity" /></td>
+						<td style="text-align:center;border-top:0"><input class="sheet-check-on" style=width:15px type="checkbox" name="attr_Gear_currently_carried"/></td>
+						<td style="border-top:0;width:100%"><input style="width:100%" type="text" name="attr_Gear_Effect"></td>
 					</tr>
 				</table>
 			</fieldset>
