@@ -634,7 +634,11 @@
 					
 					<h4 class="sheet-center">Level and Experience<span class="sheet-pictos-three">d</span></h4>
 					<div class="sheet-row"><!-- AddClassHere + @{ek_fighter_level} + @{ss_ranger_level} + @{at_rogue_level} + @{runescribe_level} + @{ss_vampire_level}-->
-						<div class="sheet-col-1-4 sheet-small-label sheet-center" title="This is automatically calculated from your individual class levels listed in the class section"><input class="sheet-underlined" type="number" name="attr_level" value="@{barbarian_level} + @{bard_level} + @{cleric_level} + @{druid_level} + @{fighter_level} + @{monk_level} + @{paladin_level} + @{ranger_level} + @{rogue_level} + @{sorcerer_level} + @{warlock_level} + @{wizard_level} + @{ek_fighter_level} + @{ss_ranger_level} + @{at_rogue_level} + @{runescribe_level} + @{vampire_level}" disabled="disabled"><br/>Overall Level</div>
+						<div class="sheet-col-1-4 sheet-small-label sheet-center" title="This is automatically calculated from your individual class levels listed in the class section">
+							<input class="sheet-underlined" type="number" name="attr_level" value="@{artificer_level} + @{barbarian_level} + @{bard_level} + @{cleric_level} + @{druid_level} + @{fighter_level} + @{monk_level} + @{paladin_level} + @{ranger_level} + @{rogue_level} + @{sorcerer_level} + @{warlock_level} + @{wizard_level} + @{ek_fighter_level} + @{ss_ranger_level} + @{at_rogue_level} + @{runescribe_level} + @{vampire_level}" disabled="disabled">
+							<br/>
+							Overall Level
+						</div>
 						<div class="sheet-col-1-4 sheet-small-label sheet-center" title="This is a bonus for you being proficient in a given task.  This bonus automatically increases as you level up and is used automatically in various rolls"><input class="sheet-underlined" type="number" name="attr_PB" value="(ceil((@{level})/1e10) + ceil((@{level})/4))" disabled="disabled"  ><br/>Prof Bonus</div>
 						<div class="sheet-col-1-4 sheet-small-label sheet-center"><input class="sheet-underlined" type="number" name="attr_xp" min="0" step="1"><br/>Current XP</div>
 						<div class="sheet-col-1-4 sheet-small-label sheet-center"><input class="sheet-underlined" type="number" name="attr_xp_next_level" min="0" step="1"><br/>XP for next level</div>
@@ -710,7 +714,7 @@
 						<div class="sheet-col-1-2 sheet-hd-row">Artificer, Bard, Cleric, Druid, Rogue, Runescribe, Monk, Warlock, Vampire</div>
 						<div class="sheet-col-1-8 sheet-center sheet-hd-row">d8</div>
 						<div class="sheet-col-1-8"><input type="number" name="attr_hd_d8" value="0" min="0" step="1"></div>
-						<div class="sheet-col-1-8"><input type="number" name="attr_hd_d8_max" value="@{bard_level} + @{cleric_level} + @{druid_level} + @{rogue_level}+@{at_rogue_level} + @{monk_level} + @{warlock_level} + @{runescribe_level} + @{Vampire_level}" disabled="disabled"></div>
+						<div class="sheet-col-1-8"><input type="number" name="attr_hd_d8_max" value="@{artificer_level} + @{bard_level} + @{cleric_level} + @{druid_level} + @{rogue_level}+@{at_rogue_level} + @{monk_level} + @{warlock_level} + @{runescribe_level} + @{Vampire_level}" disabled="disabled"></div>
 						<div class="sheet-col-1-8 sheet-center"><button type="roll" class="sheet-roll" name="roll_Use_HD_d8" value="&{template:5eDefault} {{title=Spending Hit Dice - 1d8}} {{subheader=@{character_name}}} {{rollname=HP regained}} {{roll=[[ 1d8 + @{constitution_mod} ]]}} ]]}} @{classactionhitdice}">Use</button></div>
 					</div>
 					<div class="sheet-row">
@@ -11328,7 +11332,7 @@
 			<input type="hidden" name="attr_sorcerer_spell_bonus" value="(@{charisma_mod}+@{PB})" />
 			<input type="hidden" name="attr_warlock_spell_bonus" value="(@{charisma_mod}+@{PB})" />
 			<input type="hidden" name="attr_wizard_spell_bonus" value="(@{intelligence_mod}+@{PB})" />
-			<input type="hidden" name="attr_spellcaster_level" value="( floor(@{at_rogue_level}/3) + floor(@{artificer_level}/2) + @{bard_level} + @{cleric_level} + @{druid_level} + floor(@{ek_fighter_level}/3) + floor(@{paladin_level}/2) + @{runescribe_level} + floor(@{ranger_level}/2) + floor(@{ss_ranger_level}/2) + @{sorcerer_level} + @{vampire_level} + @{wizard_level})" />
+			<input type="hidden" name="attr_spellcaster_level" value="( ceil(@{at_rogue_level}/3) + ceil(@{artificer_level}/2) + @{bard_level} + @{cleric_level} + @{druid_level} + ceil(@{ek_fighter_level}/3) + ceil(@{paladin_level}/2) + @{runescribe_level} + ceil(@{ranger_level}/2) + ceil(@{ss_ranger_level}/2) + @{sorcerer_level} + @{vampire_level} + @{wizard_level})" />
 			<!-- ( floor(@{at_rogue_level}/3) + @{bard_level} + @{cleric_level} + @{druid_level} + floor(@{ek_fighter_level}/3) + floor(@{paladin_level}/2) + @{runescribe_level} + floor(@{ss_ranger_level}/2) + @{sorcerer_level} + @{vampire_level} + @{wizard_level} ) -->
 			
 			<!-- No longer used but leaving in for legacy support -->
